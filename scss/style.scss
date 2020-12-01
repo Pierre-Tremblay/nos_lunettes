@@ -1,0 +1,992 @@
+* {
+    margin: 0px;
+    box-sizing: border-box;
+}
+* a {
+    text-decoration: none;
+}
+* a:hover {
+    text-decoration: none;
+}
+/////////////////////// Variables ///////////////////////
+$mauve: #b00160;
+$darkMauve: #7d0144;
+$btnMauve: #43232e;
+$colorFont: black;
+$textShadow: rgba(135, 135, 135, 0.75);
+$backgroundgrey: #ede8e4;
+$textgrey: #878787;
+/////////////////////// Header ///////////////////////
+
+@media (min-width: 320px) and (max-width: 767px) {
+    //Smartphones
+
+    .underMenu {
+        display: flex;
+        height: 80px;
+        flex-direction: row;
+    }
+    #presentationhead {
+        display: none !important;
+    }
+    .navbar-toggler {
+        background-color: $mauve;
+        color: white;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .bg-light {
+        background-color: $backgroundgrey !important;
+        margin-left: -27px;
+    }
+    .navHead img {
+        display: none;
+    }
+    .navHead2 img {
+        margin-top: -26px;
+        display: flex;
+        justify-content: right;
+    }
+    .numero2 {
+        display: flex;
+        align-items: center;
+        margin-right: 10px;
+        color: $mauve;
+    }
+    .numero2 .fa-phone-alt {
+        color: $mauve;
+    }
+    header {
+        border-top: 0.4rem solid $mauve;
+        box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.3);
+        background: #ede8e4;
+    }
+    .navbar {
+        margin-top: 10px;
+    }
+    .fa-bars {
+        color: white;
+        margin-left: 10px;
+    }
+    .navbar-toggler {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .nav-link {
+        text-transform: uppercase;
+        font-family: "Lato", Tahoma, Verdana, Helvetica, sans-serif;
+        font-size: 12px;
+    }
+    .nav-link li {
+        display: flex;
+        align-items: bottom;
+    }
+    .nav-link:hover {
+        background-color: $mauve;
+        border-radius: 5px;
+        color: white !important;
+    }
+    .dropdown-menu {
+        background-color: $mauve;
+        border-radius: 5px;
+    }
+    .dropdown-item {
+        color: white;
+    }
+    .dropdown-item:hover {
+        background-color: $darkMauve;
+        color: white;
+    }
+    .navbar-toggler span {
+        color: $backgroundgrey;
+        font-size: 15px;
+        margin: auto;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    //////////// Tablettes //////////// 
+    .navbar-collapse {
+        width: 300px;
+    }
+    .navbar-nav {
+        width: 300px;
+    }
+    #menu {
+        display: flex;
+        justify-content: left;
+    }
+    .underMenu {
+        display: flex;
+        height: 80px;
+    }
+    #presentationhead {
+        display: none !important;
+    }
+    .navbar-toggler {
+        background-color: $mauve;
+        color: white;
+    }
+
+    .bg-light {
+        background-color: $backgroundgrey !important;
+        margin-left: -27px;
+    }
+    .fa-bars {
+        color: white;
+    }
+    .navHead img {
+        display: none;
+    }
+    .navHead2 img {
+        margin-top: -26px;
+    }
+    .navHead2 {
+        display: flex;
+        align-items: end;
+    }
+    .numero2 {
+        display: flex;
+        align-items: center;
+        margin-right: 10px;
+        color: $mauve;
+        margin-left: 26px;
+    }
+    .numero2 .fa-phone-alt {
+        color: $mauve;
+    }
+    header {
+        border-top: 0.4rem solid $mauve;
+        box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.3);
+        background: #ede8e4;
+    }
+    .navbar {
+        margin-top: 10px;
+        height: 100%;
+        margin-top: 0;
+        width: 80px;
+    }
+    .nav-link {
+        text-transform: uppercase;
+        font-family: "Lato", Tahoma, Verdana, Helvetica, sans-serif;
+        font-size: 12px;
+    }
+    .nav-link li {
+        display: flex;
+        align-items: bottom;
+    }
+    .nav-link:hover {
+        background-color: $mauve;
+        border-radius: 5px;
+        color: white !important;
+    }
+    #navbarNavDropdown {
+        background-color: $backgroundgrey;
+    }
+
+    .dropdown-menu {
+        background-color: $mauve;
+        border-radius: 5px;
+    }
+    .dropdown-item {
+        color: white;
+    }
+    .nav-item .nav-link {
+        padding-left: 10px;
+    }
+    .dropdown-item:hover {
+        background-color: $darkMauve;
+        color: white;
+    }
+    .navbar-toggler span {
+        color: $backgroundgrey;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+    // écran pc intermédiaires
+    .navHead img {
+        margin-top: -23px;
+        margin-bottom: 11px;
+    }
+    #presentationhead {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+    }
+    #presentationhead div {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .localisation {
+        color: $textShadow;
+    }
+
+    .numero a {
+        text-decoration: none;
+        color: $mauve;
+        font-weight: bold;
+    }
+
+    .logo a {
+        color: #3b5998;
+    }
+    header {
+        border-top: 0.4rem solid $mauve;
+        box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.3);
+        background: #ede8e4;
+    }
+
+    .navHead {
+        display: inline-block;
+        vertical-align: bottom;
+        margin-bottom: 10px;
+        margin-top: -30px;
+    }
+    .bg-light {
+        background-color: $backgroundgrey !important;
+        height: 44px;
+        display: flex;
+        align-items: center;
+    }
+    .navHead2 img,
+    .numero2 {
+        display: none;
+    }
+    .nav-link {
+        text-transform: uppercase;
+        font-family: "Lato", Tahoma, Verdana, Helvetica, sans-serif;
+        font-size: 12px;
+    }
+    .nav-link li {
+        display: flex;
+        align-items: bottom;
+    }
+    .nav-link:hover {
+        background-color: $mauve;
+        border-radius: 5px;
+        color: white !important;
+    }
+    .dropdown-menu {
+        background-color: $mauve;
+        border-radius: 5px;
+    }
+    .dropdown-item {
+        color: white;
+    }
+    .dropdown-item:hover {
+        background-color: $darkMauve;
+        color: white;
+    }
+}
+@media (min-width: 1200px) {
+    //////////// Grands écrans //////////// 
+
+    #presentationhead {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+    }
+    #presentationhead div {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .localisation {
+        color: $textShadow;
+    }
+
+    .numero a {
+        text-decoration: none;
+        color: $mauve;
+        font-weight: bold;
+    }
+
+    .logo a {
+        color: #3b5998;
+    }
+    header {
+        border-top: 0.4rem solid $mauve;
+        box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.3);
+        background: #ede8e4;
+    }
+
+    .navHead {
+        display: inline-block;
+        vertical-align: bottom;
+        margin-bottom: 10px;
+        margin-top: -30px;
+    }
+    .bg-light {
+        background-color: $backgroundgrey !important;
+        height: 44px;
+        display: flex;
+        align-items: center;
+    }
+    .navHead2 img,
+    .numero2 {
+        display: none;
+    }
+    .nav-link {
+        text-transform: uppercase;
+        font-family: "Lato", Tahoma, Verdana, Helvetica, sans-serif;
+        font-size: 12px;
+    }
+    .nav-link li {
+        display: flex;
+        align-items: bottom;
+    }
+    .nav-link:hover {
+        background-color: $mauve;
+        border-radius: 5px;
+        color: white !important;
+    }
+    .dropdown-menu {
+        background-color: $mauve;
+        border-radius: 5px;
+    }
+    .dropdown-item {
+        color: white;
+    }
+    .dropdown-item:hover {
+        background-color: $darkMauve;
+        color: white;
+    }
+}
+/////////////////////// Image bannière ///////////////////////
+
+#presentationbody {
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: -10000;
+}
+
+/////////////////////// Bandeau infos ///////////////////////
+@media (min-width: 320px) and (max-width: 767px) {
+    //////////// Smartphones //////////// 
+    #presentationinfos {
+        background-color: $mauve;
+        width: 100%;
+        height: 124px;
+    }
+
+    .bandeau {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        height: 82px;
+        flex-wrap: wrap;
+    }
+
+    .bandeau span {
+        padding-top: 10px;
+        color: $backgroundgrey;
+
+        margin-right: 20px;
+    }
+    .bandeau .btn-rdv {
+        margin-top: 10px;
+        background-color: #ffff;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    //////////// Tablettes //////////// 
+    #presentationinfos {
+        background-color: $mauve;
+        width: 100%;
+        height: 100px;
+    }
+
+    .bandeau {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        height: 82px;
+        flex-wrap: wrap;
+    }
+
+    .bandeau span {
+        padding-top: 10px;
+        color: $backgroundgrey;
+
+        margin-right: 20px;
+    }
+    .bandeau .btn-rdv {
+        margin-top: 10px;
+        background-color: #ffff;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+}
+@media (min-width: 992px) {
+    //////////// Grands écrans //////////// 
+    #presentationinfos {
+        background-color: $mauve;
+        width: 100%;
+        height: 82px;
+    }
+    .bandeau {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        height: 82px;
+    }
+
+    .bandeau span {
+        color: $backgroundgrey;
+        font-size: 1.5rem;
+        margin-right: 20px;
+    }
+    .bandeau .btn-rdv {
+        background-color: #ffff;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+}
+
+/////////////////////// Bandeau icons ///////////////////////
+@media (min-width: 320px) and (max-width: 767px) {
+    //////////// Smartphones ////////////
+    #presentationIcons {
+        height: 700px;
+        display: flex;
+        justify-content: center;
+    }
+    #glass {
+        display: flex;
+
+        align-items: center;
+        list-style-type: none;
+        height: 218px;
+    }
+    .fa-thumbs-up,
+    .fa-clock,
+    .fa-glasses {
+        color: $mauve;
+        font-weight: 1.5rem !important;
+    }
+    #glass li {
+        color: #382a23;
+        font-weight: bold;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        margin-left: 2rem;
+        display: flex;
+        margin-top: 100px;
+    }
+    #glass {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .textIcons {
+        margin-left: 10px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    //////////// Tablettes //////////// 
+    #presentationIcons {
+        height: 600px;
+        display: flex;
+        justify-content: center;
+    }
+    #glass {
+        display: flex;
+
+        align-items: center;
+        list-style-type: none;
+        height: 218px;
+    }
+    .fa-thumbs-up,
+    .fa-clock,
+    .fa-glasses {
+        color: $mauve;
+        font-weight: 1.5rem !important;
+    }
+    #glass li {
+        color: #382a23;
+        font-weight: bold;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        margin-left: 2rem;
+        display: flex;
+        margin-top: 100px;
+    }
+    #glass {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .textIcons {
+        margin-left: 10px;
+    }
+}
+@media (min-width: 992px) {
+    //////////// Grands écrans //////////// 
+    #glass {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style-type: none;
+        height: 218px;
+    }
+    .fa-thumbs-up,
+    .fa-clock,
+    .fa-glasses {
+        color: $mauve;
+        font-weight: 1.5rem !important;
+    }
+
+    #glass li {
+        color: #382a23;
+        font-weight: bold;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        margin-left: 2rem;
+        display: flex;
+    }
+    #glass li div {
+        color: #382a23;
+        font-weight: bold;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        margin-left: 2rem;
+    }
+}
+
+/////////////////////// Bandeau rencontre ///////////////////////
+.testHover:hover {
+    -webkit-filter: grayscale(100%); /* Pour les navigateurs Chrome, Safari, Opera */
+    filter: grayscale(100%); /* Firefox */
+}
+@media (min-width: 320px) and (max-width: 767px) {
+    //////////// Smartphones ////////////
+    #presentationRencontre {
+        background-color: $backgroundgrey;
+        height: 800px;
+    }
+    #presentationRencontre h3 {
+        color: $mauve;
+    }
+    #rencontre {
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+        height: 281px;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .descriptionRencontre {
+        background-color: $mauve;
+        width: 207px;
+        display: flex;
+        justify-content: center;
+        color: white;
+        padding: 10px;
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+    .boxRencontre {
+        list-style-type: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    //////////// Tablettes //////////// 
+    #presentationRencontre {
+        background-color: $backgroundgrey;
+        height: 585px;
+    }
+    #presentationRencontre h3 {
+        color: $mauve;
+    }
+    #rencontre {
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+        height: 281px;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    #boxPresentation {
+        padding-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .descriptionRencontre {
+        background-color: $mauve;
+        width: 207px;
+        display: flex;
+        justify-content: center;
+        color: white;
+        padding: 10px;
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+    .boxRencontre {
+        list-style-type: none;
+    }
+    .boxFull {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .boxProfil {
+        margin: 15px;
+    }
+}
+@media (min-width: 992px) {
+    // Grand écrans
+    #presentationRencontre {
+        background-color: $backgroundgrey;
+    }
+    #rencontre {
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+        height: 281px;
+        align-items: center;
+    }
+    #rencontre .boxRencontre {
+        width: 227.5px;
+        height: 201px;
+    }
+    .descriptionRencontre {
+        background-color: $mauve;
+        width: 207px;
+        display: flex;
+        justify-content: center;
+        color: white;
+        padding: 10px;
+        font-weight: bold;
+    }
+    .boxRencontre h3 {
+        color: $mauve;
+    }
+
+    .boxRencontre p {
+        color: $textgrey;
+    }
+    .boxRencontre {
+        list-style-type: none;
+    }
+    .boxFull {
+        display: flex;
+    }
+}
+/////////////////////// Bandeau explication ///////////////////////
+@media (min-width: 320px) and (max-width: 767px) {
+    //////////// Smartphones ////////////
+    #full h2,
+    .fa-caret-right {
+        color: $mauve;
+    }
+    #full {
+        margin-top: 35px;
+        color: $textgrey;
+    }
+    .secondPart {
+        margin-top: 35px;
+    }
+    .articleFirst {
+        padding-left: 27px;
+    }
+    .articleFirst li {
+        list-style-type: none;
+    }
+    .articleFirst li span {
+        padding-left: 10px;
+    }
+    #full h3 {
+        color: black;
+        font-size: 20px;
+    }
+
+    .secondPart p a {
+        color: $colorFont;
+        text-decoration: underline;
+    }
+    #all ul {
+        padding-left: 15px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    //////////// Tablettes //////////// 
+    #full h2,
+    .fa-caret-right {
+        color: $mauve;
+    }
+    #full {
+        margin-top: 35px;
+        color: $textgrey;
+    }
+    .secondPart {
+        margin-top: 35px;
+    }
+    .articleFirst {
+        padding-left: 27px;
+    }
+    .articleFirst li {
+        list-style-type: none;
+    }
+    .articleFirst li span {
+        padding-left: 10px;
+    }
+    #full h3 {
+        color: black;
+        font-size: 20px;
+    }
+
+    .secondPart p a {
+        color: $colorFont;
+        text-decoration: underline;
+    }
+    #all ul {
+        padding-left: 15px;
+    }
+}
+@media (min-width: 992px) {
+    // Grand écrans
+    #full h2 {
+        color: $mauve;
+    }
+    #full {
+        margin-top: 35px;
+        color: $textgrey;
+    }
+    .secondPart {
+        margin-top: 35px;
+    }
+    .fa-caret-right {
+        color: $mauve;
+    }
+
+    .articleFirst li {
+        list-style-type: none;
+    }
+    .articleFirst li span {
+        padding-left: 10px;
+    }
+    #full h3 {
+        color: black;
+        font-size: 20px;
+    }
+
+    #all {
+        display: flex;
+    }
+    #first,
+    #second {
+        width: 518px;
+        height: 225px;
+        text-align: justify;
+        margin: 0px 10px 0px 10px;
+    }
+
+    .secondPart p a {
+        color: $colorFont;
+        text-decoration: underline;
+    }
+}
+/////////////////////// Bandeau Footer ///////////////////////
+@media (min-width: 320px) and (max-width: 767px) {
+    //////////// Smartphones ////////////
+
+    .logoFooter {
+        display: none;
+    }
+    #upperFooter {
+        background-color: $backgroundgrey;
+        height: 210px;
+        display: flex;
+    }
+    #footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .contactMe {
+        width: 100%;
+        margin: 0px 10px 0px 10px;
+    }
+    .contactMe h4 {
+        color: $mauve;
+        font-weight: bold;
+    }
+    .contactMe p {
+        width: 100%;
+        margin: 0px;
+        font-size: 12px;
+    }
+    .contactMe p {
+        width: 100%;
+        margin: 0px;
+    }
+    .contactMe p span {
+        font-weight: bold;
+    }
+    .textContactMe {
+        margin-top: -20px;
+    }
+    #footer {
+        display: flex;
+        justify-content: left;
+    }
+    .follow h4 {
+        color: $mauve;
+        font-weight: bold;
+    }
+
+    #facebookBottom {
+        display: flex;
+        justify-content: center;
+        background-color: $btnMauve;
+        width: 90px;
+        height: 45px;
+        align-items: center;
+        color: white;
+        border-radius: 5px;
+    }
+    .buttonFollow {
+        display: flex;
+        justify-content: center;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    //////////// Tablettes //////////// 
+    .logoFooter {
+        display: none;
+    }
+    #upperFooter {
+        background-color: $backgroundgrey;
+        height: 210px;
+        display: flex;
+    }
+    #footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .contactMe {
+        width: 100%;
+        margin: 0px 10px 0px 10px;
+    }
+    .contactMe h4 {
+        color: $mauve;
+        font-weight: bold;
+    }
+    .contactMe p {
+        width: 100%;
+        margin: 0px;
+        font-size: 12px;
+    }
+    .contactMe p {
+        width: 100%;
+        margin: 0px;
+    }
+    .contactMe p span {
+        font-weight: bold;
+    }
+    .textContactMe {
+        margin-top: -20px;
+    }
+    #footer {
+        display: flex;
+        justify-content: left;
+    }
+    .follow h4 {
+        color: $mauve;
+        font-weight: bold;
+    }
+    #facebookBottom {
+        display: flex;
+        justify-content: center;
+        background-color: $btnMauve;
+        width: 90px;
+        height: 45px;
+        align-items: center;
+        color: white;
+        border-radius: 5px;
+    }
+    .buttonFollow {
+        display: flex;
+        justify-content: center;
+    }
+}
+@media (min-width: 992px) {
+    //////////// Grands écrans //////////// 
+    #upperFooter {
+        background-color: $backgroundgrey;
+        height: 210px;
+        display: flex;
+    }
+    #footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .contactMe {
+        width: 530px;
+        margin: 0px 10px 0px 10px;
+    }
+    .contactMe h4 {
+        color: $mauve;
+        font-weight: bold;
+    }
+    .contactMe p {
+        width: 530px;
+        margin: 0px;
+        font-size: 12px;
+    }
+    .contactMe p {
+        width: 530px;
+        margin: 0px;
+    }
+    .contactMe p span {
+        font-weight: bold;
+    }
+    .textContactMe {
+        margin-top: -20px;
+    }
+
+    .follow h4 {
+        color: $mauve;
+        font-weight: bold;
+    }
+    #facebookBottom {
+        display: flex;
+        justify-content: center;
+        background-color: $btnMauve;
+        width: 90px;
+        height: 45px;
+        align-items: center;
+        color: white;
+        border-radius: 5px;
+    }
+    .buttonFollow {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/////////////////////// Bandeau Copyright ///////////////////////
+#copyright {
+    background-color: $colorFont;
+    color: white;
+    padding-bottom: 10px;
+}
+#copyright div span {
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+}
